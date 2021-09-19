@@ -1,6 +1,10 @@
+/* index */
+header.index{
+    padding: 0 30px 30px;
+} 
 header{
     background: linear-gradient(to right, #042e6f, #042e6f 50%, #f2f2f2 50%, #f2f2f2);
-    padding: 0 30px 30px;
+    padding: 0 30px 55px;
 }
 header .visual img{
     width: 100%;
@@ -146,305 +150,55 @@ header #lnb nav > ul ul a:hover::after{
     width: 100%;
 }
 
-.info_box{
-    width: 1175px;
-    margin: 0 auto;
+.contents{
+    width:1180px; margin: 0 auto;
 }
-.info_box h2{
-    padding: 58px 0 41px;
-    font-size: 21px;
-    color: #777;
-    font-weight: normal;
-    text-align: center;
-    letter-spacing: 36px;
+.h2{
+    font-size: 36px; columns: #222; line-height: 100%; padding: 53px 53px; position: relative; text-align: center; font-weight: normal;
 }
-.info_box h2 span{
-    color: #042e6f;
+.h2::after{
+    content: ""; position: absolute; left:50%; bottom: 0; width: 50px; height: 1px; background:#000 ;
+    transform: translateX(-50%);
 }
-.info_box li:first-child{
-   margin: 0;
+.h2 + p{
+    font-size: 18px; color:#666; text-align: center; padding: 46px 0 54px; line-height: 30px;
 }
-.info_box li{
-    width: 260px;
-    position: relative;
-    float: left;
-    margin: 0 0 0 45px;
+h3{
+    font-size: 18px; color: #222; font-weight: normal; padding: 50px 0 20px;
 }
-.info_box li em{
-    display: block;
-    width: 100%;
-    height: 170px;
-    overflow: hidden;
+h3::before{
+    content: ""; display: inline-block; margin: 0 8px 0 0;
+    width: 4px; height: 4px; background: #00a5e1; vertical-align: 5px;
 }
-.info_box li img{ 
-    width: 100%;
-    height: 170px;
-    transform: scale(1);
-    transition: all 0.2s;
+input[type="checkbox"]{
+    position: absolute; left: -4000%;
 }
-.info_box li:hover img{
-    transform: scale(1.1);
+input[type="checkbox"]+label{
+    font-size: 14px; color: #222; line-height: 27px
 }
-.info_box li a > div{
-    padding: 40px 20px 0;
-    height: 170px;
-    transition: all 0.3;
-
-    background: url(../images/sales_obj01.png) no-repeat -260px -240px,
-                url(../images/sales_obj02.png) no-repeat -309px 180px,
-                url(../images/sales_obj03.png) no-repeat 204px 210px;
-}
-.info_box li:hover a > div{
-    background-position: -180px -160px, -229px 120px, 104px 130px; 
-    background-color: #aaa8aa;
-}
-.info_box li:hover a * {
-    color: #fff;
-    transition: all 0.5s;
+input[type="checkbox"]+label::before{
+    content: ""; display: inline-block; width: 27px; height: 27px;
+    background: url(../images/icon.png) no-repeat -97px -60px; vertical-align: -8px;
+    margin: 0 8px 0 0;
 } 
-.info_box li a h3{
-    font-size: 19px;
-    color: #222;
-    font-weight: normal;
-    line-height: 28px;
-}
-.info_box li a p{
-    font-size: 13px;
-    color: #747774;
-    line-height: 18px;
-    padding: 13px 0;
-}
-.info_box li a > div div{
-    position: absolute;
-    left: 20px;
-    bottom: 0;
-    width: 220px;
-    height: 54px;
-    line-height: 54px;
-    border-top: 1px solid #ccc;
-    text-align: right;
-    font-size: 13px;
-    color: #666;
-}
-.info_box li a > div div::after{
-    content: "";
-    display: inline-block;
-    background: url(../images/icon.png) -60px -25px no-repeat;
-    width: 22px;
-    height: 12px;
-    margin: 0 0 0 6px;
-    transition: all 0.5s;
-}
-.info_box li:hover a > div div::after{
-    background-position: -60px -5px;
-}
-.info_box li a .ico1{
-    width: 65px;
-    height: 65px;
-    color: #fff;
-    font-size: 13px;
-    text-align: center;
-    line-height: 65px;
-    position: absolute;
-    left: 20px;
-    top: 137px;
-}
-.info_box li a .ico1.no1{
-    background: #94c83d;
-}
-.info_box li a .ico1.no2{
-    background: #042e6f;
-}
-.info_box + *{
-    padding-top: 30px;
-}
-.btn_more{
-    display: inline-block;
-    width: 140px;
-    height: 44px;
-    border: 1px solid #042e6f;
-    box-sizing: border-box;
-    font-size: 16px;
-    color: #042e6f;
-    line-height: 44px;
-    text-align: center;
-}
-.btns.center{
-    text-align: center;
-}
-.btn_more::after{
-    content: "";
-    display: inline-block;
-    background: url(../images/icon.png) -195px -5px no-repeat;
-    width: 12px;
-    height:  12px;;
-    letter-spacing: 7px; 
-    margin: 0 0 0 8px
+input[type="checkbox"]:checked + label::before{
+    background-position: -129px -60px;
 }
 
-.guide_box{
-    width: 1175px;
-    margin: 60px auto 55px;
-}
-.guide_box article{
-    float: left;
-}
-.guide_box .guide h2{
-    float: left;
-    font-size: 30px;
-    color: #000;
-    line-height: 40px;
-    padding: 0 43px 0 0 ;
-}
-.guide_box .guide ul{
-    float: left;
-}
-.guide_box .guide ul li{
-    float: left;
-    padding: 0 50px 0 0;
-}
-.guide_box .guide ul li a{
-    display: inline-block;
-    padding: 70px 0 0;
-    text-align: center;
-    font-size: 15px;
-    color: #002870;
-}
-.guide_box .guide ul li:nth-child(1) a{
-    background: url(../images/ico_main_util01.png) no-repeat top;
-}
-.guide_box .guide ul li:nth-child(2) a{
-    background: url(../images/ico_main_util02.png) no-repeat top;
-    width: 56px;
-}
-.guide_box .guide ul li:nth-child(3) a{
-    background: url(../images/ico_main_util03.png) no-repeat top;
-}
-.guide_box .guide ul li:nth-child(4) a{
-    background: url(../images/ico_main_util04.png) no-repeat top;
-}
-.guide_box .phone{
-    padding: 0 0 0 55px;
-    position: relative;
-}
-.guide_box .phone::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 1px;
-    height: 80px;
-    background: #666;
-}
-.guide_box .phone h2{
-    font-size: 15px;
-    color: #777;
-    font-weight: normal;
-}
-.guide_box .phone > div{
-    float: left;
-}
-.guide_box .phone > div:first-child span{
-    font-size: 25px;
-    color: #042e6f;
-}
-.guide_box .phone > div:last-child{
-    position: relative; top: 3px; padding: 0 0 0 55px; font-size: 15px; color: #777;
-    font-weight: normal; line-height: 100%;
-}
-.guide_box .phone > div:last-child p,.guide_box .phone > div:last-child h2{
-    float: left;
-}
-.guide_box .phone > div:last-child p{
-    padding: 0 0 0 25px;
-}
-.guide_box .phone > div:last-child div{
-    padding: 15px 0 0 0;
-    clear: both;
-}
- 
-.news{
-    background: #f4f4f9;
-}
-.news > div{
-    width: 1175px;
-    margin: 0 auto;
-    padding: 50px 0;
-}
-.news h2{
-    width: 95px;
-    height: 95px;
-    color: #fff;
-    font-size: 14px;
+.btn_type1{
+    display: inline-block; width: 120px; height: 45px; text-align: center; line-height: 45px; color: #fff; font-size: 13px;
     background: #042e6f;
-    line-height: 95px;
-    font-weight: normal;
-    text-align: center;
-    float: left;
 }
-.news ul{
-    float: left;
-    padding: 0 0 0 15px;
+.btn_center{
+    text-align: center; 
 }
-.news li{
-    float: left;
-    padding: 0 0 0 45px;
+label + .btn_center { 
+    padding: 65px 0 0;
 }
-.news li a{
-    display: block;
-    width: 310px;
-    height: 260px;
-    background: #fff;
-    padding: 35px 30px 0;
-    box-sizing: border-box;
-    position: relative;
-}
-.news li a h3{
-    font-size: 24px;
-    color: #222;
-    font-weight: normal;
-    line-height: 35px;
-}
-.news li a p{
-    font-size: 14px;
-    color: #666;
-    padding: 22px 0 20px;
-}
-.news li a span{
-    font-size: 12px;
-    color: #666;
-}
-.news li a em{
-    position: absolute;
-    background: #606060;
-}
-.news li a em:nth-of-type(1){
-    width: 100%;
-    height: 1px;
-    left: 0;
-    top: 0;
-}
-.news li a em:nth-of-type(2){
-    width: 1px;
-    height: 100%;
-    left: 0;
-    top: 0;
-}
-.news li a em:nth-of-type(3){
-    width: 1px;
-    height: 100%;
-    right: 0;
-    bottom: 0;
-}
-.news li a em::nth-of-type(4){
-    width: 100%;
-    height: 1px;
-    right: 0;
-    bottom: 0;
-}
+
 
 footer{
-    background: #272f3c;
+    background: #272f3c; margin: 80px 0 0;
 }
 footer > div {
     width: 1175px;
