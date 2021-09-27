@@ -196,6 +196,43 @@ label + .btn_center {
     padding: 65px 0 0;
 }
 
+table.type1{
+    border-top: 2px solid #042e6f; border-bottom: 1px solid #999;
+}
+table.type1 th, table.type1 td{
+    border-top: 1px solid #ccc; border-left: 1px solid #ccc;
+    height: 40px; 
+}
+table.type1 th:first-child{
+    border-left: none;
+}
+table.type1:first-child th, table.type1:first-child td{
+    border-top: none;
+}
+table.type1 th{
+    padding: 10px 10px 10px  45px; text-align: left; font-weight: normal;  font-size: 13px; color: #222;
+}
+table.type1 th span{
+    background: url(../images/icon.png) no-repeat -534px -5px; margin:0 6px 0 -8px;
+    display: inline-block; width: 8px; height: 7px; overflow: hidden; color: transparent; vertical-align: 2px;
+}
+table.type1 td{
+    padding: 10px 55px;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer{
     background: #272f3c; margin: 80px 0 0;
