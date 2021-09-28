@@ -170,24 +170,48 @@ h3::before{
     content: ""; display: inline-block; margin: 0 8px 0 0;
     width: 4px; height: 4px; background: #00a5e1; vertical-align: 5px;
 }
-input[type="checkbox"]{
+input.type1{
     position: absolute; left: -4000%;
 }
-input[type="checkbox"]+label{
+input.type1+label{
     font-size: 14px; color: #222; line-height: 27px
 }
-input[type="checkbox"]+label::before{
+input.type1+label::before{
     content: ""; display: inline-block; width: 27px; height: 27px;
     background: url(../images/icon.png) no-repeat -97px -60px; vertical-align: -8px;
     margin: 0 8px 0 0;
 } 
-input[type="checkbox"]:checked + label::before{
+input.type1:checked + label::before{
     background-position: -129px -60px;
 }
+
+
+
+input.type2{
+    position: absolute; left: -4000%;
+}
+input.type2+label{
+    font-size: 14px; color: #222; line-height: 27px; padding: 0 35px 0 0;
+}
+input.type2+label::before{
+    content: ""; display: inline-block; width: 12px; height: 12px;
+    background: url(../images/icon.png) no-repeat -49px -60px; 
+    margin: 0 8px 0 0;
+} 
+input.type2:checked + label::before{
+    background-position: -66px -60px;
+} 
+
+
+
 
 .btn_type1{
     display: inline-block; width: 120px; height: 45px; text-align: center; line-height: 45px; color: #fff; font-size: 13px;
     background: #042e6f;
+}
+.btn_type3{
+    display: inline-block; min-width: 102px; border: 2px solid #aaa; height: 38px; line-height: 38px; text-align: center;
+    box-sizing: border-box; vertical-align: middle; padding: 0 10px;
 }
 .btn_center{
     text-align: center; 
@@ -201,7 +225,7 @@ table.type1{
 }
 table.type1 th, table.type1 td{
     border-top: 1px solid #ccc; border-left: 1px solid #ccc;
-    height: 40px; 
+    height: 40px; font-size: 13px;
 }
 table.type1 th:first-child{
     border-left: none;
@@ -210,18 +234,24 @@ table.type1:first-child th, table.type1:first-child td{
     border-top: none;
 }
 table.type1 th{
-    padding: 10px 10px 10px  45px; text-align: left; font-weight: normal;  font-size: 13px; color: #222;
+    padding: 10px 10px 10px  45px; text-align: left; font-weight: normal; color: #222;
 }
 table.type1 th span{
     background: url(../images/icon.png) no-repeat -534px -5px; margin:0 6px 0 -8px;
     display: inline-block; width: 8px; height: 7px; overflow: hidden; color: transparent; vertical-align: 2px;
 }
 table.type1 td{
-    padding: 10px 55px;
+    padding: 10px 55px; color: #777;
 } 
-
-
-
+table.type1 .info::before{ 
+    content: ""; display: inline-block; background:url(../images/icon.png) no-repeat -336px -5px; width: 15px; height: 14px;
+    vertical-align: -2px; margin: 0 5px 0 13px;
+}
+table.type1 td > div{
+    padding: 10px 0 0 ;
+}
+table.type1 td > div:first-child{padding: 0;}
+table.type1 td .btn_type3{margin-left:5px;}
 
 
 
